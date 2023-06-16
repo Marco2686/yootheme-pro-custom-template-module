@@ -22,7 +22,7 @@ class TemplateMatch
         $pages = get_query_var('paged') && get_query_var('paged') !== 1 ? 'except_first' : 'first';
         
         // match context and layout from view object
-        // if (is_tax() || is_category() || is_tag()) {
+        // change here your custom match rule, in this case i'm matching a taxonomy and checking the query vars match to my desidered values
             if(is_tax() && ($wp_query->query['tipologia'] != '' && isset($wp_query->query['marchio']))){
 
             return [
