@@ -7,8 +7,6 @@ use YOOtheme\Config;
 
 class TemplateMatch
 {   
-
-
     public static function matchTemplate($tpl)
     {   
         
